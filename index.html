@@ -3,8 +3,10 @@
     <meta name="bearman222's blog" content="http://bearman222.github.io">
 </head>
 <body>
+    <main>
 <h1>Hello!</h1>
-<div>this is a fake website</div>
+<div>This is a simple website right now.</div>
+<div>It will eventually showcase my leet coding skills.</div>
 <button id="redButton" onclick="redButtonClicked()"
     style="width:100px;height:100px;background-color:red;
     border:1px solid black;border-radius:5px;
@@ -14,15 +16,22 @@
     border:1px solid black;border-radius:5px
     ">blue button</button>
 <script >
+    // function for when the red button is clicked
     function redButtonClicked() {
+        // make the button disappear!
         document.getElementById("redButton").style.display = "none";
+        // This is how we save values in local storage.
+        localStorage.setItem("redButtonClicked", "true");
     }
+    // function for when the blue button is clicked
     function blueButtonClicked() {
         document.getElementById("blueButton").style.display = "none";
+        localStorage.setItem("blueButtonClicked", "true");
     }
 
 </script>
 
-
+</main>
 </body>
+
 </html>
