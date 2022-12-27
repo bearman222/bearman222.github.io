@@ -1,48 +1,71 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <title>Bearman's Coding Adventures</title>
     <meta name="bearman222's blog" content="http://bearman222.github.io">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .color-button {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .red {
+            background-color: red;
+        }
+    </style>
 </head>
+
 <body>
     <main>
-<h1>Hello!</h1>
-<div>This is a simple website right now.</div>
-<div>It will eventually showcase my leet coding skills.</div>
-<h2>Merry Christmas!</h2>
-<button id="greenButton" onmousedown="greenButtonClicked()"
-    style="width:100px;height:100px;background-color:green;
-    border:1px solid black;border-radius:5px;
-    ">mouse down</button>
-<button id="redButton" onclick="redButtonClicked()"
-    style="width:100px;height:100px;background-color:red;
-    border:1px solid black;border-radius:5px;
-    ">single click</button>
-<button id="blueButton" ondblclick="blueButtonClicked()" 
-    style="width:100px;height:100;background-color:blue;
-    border:1px solid black;border-radius:5px
-    ">double click</button>
-<script >
-    // function for when the red button is clicked
-    function redButtonClicked() {
-        // make the button disappear!
-        document.getElementById("redButton").style.display = "none";
-        // This is how we save values in local storage.
-        localStorage.setItem("redButtonClicked", "true");
-    }
-    // function for when the blue button is clicked
-    function blueButtonClicked() {
-        document.getElementById("blueButton").style.display = "none";
-        localStorage.setItem("blueButtonClicked", "true");
-    }
-    // function for when the green button is clicked
-    function greenButtonClicked() {
-        document.getElementById("greenButton").style.display = "none";
-        localStorage.setItem("greenButtonClicked", "true");
-    }
+        <h1>Hello!</h1>
+        <div>This is a simple website right now.</div>
+        <div>It will eventually showcase my leet coding skills.</div>
+        <h2>Merry Christmas!</h2>
+        <button id="greenButton" class="color-button green" onmousedown="greenButtonClicked()">mouse down</button>
+        <button id="redButton" class="color-button red" onclick="redButtonClicked()">single click</button>
+        <button id="blueButton" class="color-button blue" ondblclick="blueButtonClicked()">double click</button>
+        <script>
+            // function for when the red button is clicked
+            function redButtonClicked() {
+                // make the button disappear!
+                document.getElementById("redButton").style.display = "none";
+                // This is how we save values in local storage.
+                localStorage.setItem("redButtonClicked", "true");
+            }
+            // function for when the blue button is clicked
+            function blueButtonClicked() {
+                document.getElementById("blueButton").style.display = "none";
+                localStorage.setItem("blueButtonClicked", "true");
+            }
+            // function for when the green button is clicked
+            function greenButtonClicked() {
+                document.getElementById("greenButton").style.display = "none";
+                localStorage.setItem("greenButtonClicked", "true");
+            }
 
-</script>
-<div>Roll some dice!</div>
+        </script>
+        <div>Roll some dice!</div>
 
-</main>
+    </main>
 </body>
 
 </html>
