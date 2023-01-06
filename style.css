@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.color-button {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+/* Styles related to passage formatting */
+.aside {
+    font-size: 0.9em;
+    padding: 1em;
+}
+
+.pop {
+    font-size: 1.4em;
+    padding-left: 1.5em;
+}
