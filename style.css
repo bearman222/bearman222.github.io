@@ -1,8 +1,9 @@
-body {
+/* body {
     margin: 0;
     padding: 0;
-}
+} */
 
+/* Styles for UI elements */
 .color-button {
     width: 100px;
     height: 100px;
@@ -24,12 +25,16 @@ body {
 }
 
 /* Styles related to passage formatting */
-.aside {
-    font-size: 0.9em;
+.story-title {
+    font: small-caps bold 1.5em/1 sans-serif;
+}
+
+.story-content {
+    font: normal 1.1em/1.25 sans-serif;
     padding: 1em;
 }
 
 .pop {
-    font-size: 1.4em;
+    font: small-caps 1em/2 sans-serif;
     padding-left: 1.5em;
 }
