@@ -12,36 +12,44 @@
 
 <body>
     <main>
-        <img src="images/Headshot.png" alt="barron profile picture" width="200px">
-        <h1>Barron Eskind</h1>
-        <p>Software Developer</p>
-        <p>I am a python programmer and full-stack web developer. I also love to help people solve complex problems.</p>
-        <div><a href="contact-me.html"><em>Contact Me</em></a></div>
-        <div><a href="https://github.com/bearman222">See my GitHub</a></div>
-        <div><a href="my-story.html">See why I started learning code at age 6.</a></div>
+        <div class="container">
+            <div class="item" style="padding: 20px;"><img src="images/Headshot.png" alt="barron profile picture" width="200px"></div>
+            <div class="item">
+                <h1>Barron Eskind</h1>
+                <p class="orange-accent">Software Developer</p>
+                <p>I am a python programmer and full-stack web developer.</p>
+                <p>I also love to develop solutions for complex problems.</p>
+                <div><a href="contact-me.html"><em>Contact Me</em></a></div>
+                <div><a href="https://github.com/bearman222">See my GitHub</a></div>
+                <div><a href="my-story.html">See why I started learning code at age 6.</a></div>
+            </div>
+        </div>
         <hr>
-        <h3>Education</h3>
-        <ul>
-            <li>Lousiana State University A&M. Baton Rouge, LA
-                <br>2008 BA in English Literature
-            </li>
-            <li>Louisiana School for Math, Science, & Arts. Natchitoches, LA
-                <br>2004 HS Diploma, dual focus: Computer Science and Literature Studies
-            </li>
-        </ul>
-        <h3>My Hobbies</h3>
-        <ul>
-            <li>Painting miniature figurines for tabletop RPGs</li>
-            <li>Enjoying nature through scouting and camping</li>
-            <li>Drinking coffee and sunrises</li>
-            <li>Watching RiffTrax or Mystery Science 3k movies</li>
-        </ul>
-        <p></p>
-
+        <div class="container">
+            <div class="item">
+                <h3>Education</h3>
+                <ul>
+                    <li>Lousiana State University A&M. Baton Rouge, LA
+                        <br>2008 BA in English Literature
+                    </li>
+                    <li>Louisiana School for Math, Science, & Arts. Natchitoches, LA
+                        <br>2004 HS Diploma, dual focus: Computer Science and Literature Studies
+                    </li>
+                </ul>
+            </div>
+            <div class="item">
+                <h3>My Hobbies</h3>
+                <ul>
+                    <li>Painting miniature figurines for tabletop RPGs</li>
+                    <li>Enjoying nature through scouting and camping</li>
+                    <li>Drinking coffee and sunrises</li>
+                    <li>Watching RiffTrax or Mystery Science 3k movies</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
         <!-- This is a comment :) -->
-        <div>This is a simple website right now.</div>
-        <div>It will eventually showcase my leet coding skills.</div>
-        <hr>
+        <div>This simple website will eventually showcase my leet coding skills.</div>
         <h2>Mouse Event Fun:</h2>
         <button id="greenButton" type="button" class="color-button green" onmousedown="greenButtonClicked()">mouse
             down</button>
