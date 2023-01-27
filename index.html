@@ -6,27 +6,66 @@
     <title>⚔️ Bearman's Coding Adventures ⚔️</title>
     <meta name="bearman222's blog" content="http://bearman222.github.io">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" />
-<!-- test dev  -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Helios&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto%20Sans%20Adlam%20Unjoined&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="lib/style.css" rel="stylesheet" />
+
 </head>
 
 <body>
-    <main>
-        <div class="container">
-            <div class="item" style="padding: 20px;"><img src="images/Headshot.png" alt="barron profile picture" width="200px"></div>
-            <div class="item">
+    <div class="container">
+        <div class="left-column">
+            <div class="headshot-section">
+                <img src="lib/img/Headshot.png" alt="barron profile picture" width="200px">
+            </div>
+            <div class="skills-section">
+                <h2>Skills</h2>
+                <div class="skill">
+                    <p>Web Development</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>JavaScript</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>HTML/CSS</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>React</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Node.js</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 60%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="about-section">
                 <h1>Barron Eskind</h1>
                 <p class="orange-accent">Software Developer</p>
                 <p>I am a python programmer and full-stack web developer.</p>
                 <p>I also love to develop solutions for complex problems.</p>
-                <div><a href="contact-me.html"><em>Contact Me</em></a></div>
-                <div><a href="https://github.com/bearman222">See my GitHub</a></div>
-                <div><a href="my-story.html">See why I started learning code at age 6.</a></div>
+                <div class="contact-section">
+                    <a href="contact-me.html"><em>Contact Me</em></a>
+                    <a href="https://github.com/bearman222">See my GitHub</a>
+                    <a href="my-story.html">See why I started learning code at age 6.</a>
+                </div>
             </div>
-        </div>
-        <hr>
-        <div class="container">
-            <div class="item">
+            <div class="education-section">
                 <h3>Education</h3>
                 <ul>
                     <li>Lousiana State University A&M. Baton Rouge, LA
@@ -37,7 +76,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="item">
+            <div class="hobbies-section">
                 <h3>My Hobbies</h3>
                 <ul>
                     <li>Painting miniature figurines for tabletop RPGs</li>
@@ -47,40 +86,9 @@
                 </ul>
             </div>
         </div>
-        <hr>
-        <!-- This is a comment :) -->
-        <div>This simple website will eventually showcase my leet coding skills.</div>
-        <h2>Mouse Event Fun:</h2>
-        <button id="greenButton" type="button" class="color-button green" onmousedown="greenButtonClicked()">mouse
-            down</button>
-        <button id="redButton" type="button" class="color-button red" onclick="redButtonClicked()">single
-            click</button>
-        <button id="blueButton" type="button" class="color-button blue" ondblclick="blueButtonClicked()">double
-            click</button>
-        <script>
-            // function for when the red button is clicked
-            function redButtonClicked() {
-                // make the button disappear!
-                document.getElementById("redButton").style.display = "none";
-                // This is how we save values in local storage.
-                localStorage.setItem("redButtonClicked", "true");
-            }
-            // function for when the blue button is clicked
-            function blueButtonClicked() {
-                document.getElementById("blueButton").style.display = "none";
-                localStorage.setItem("blueButtonClicked", "true");
-            }
-            // function for when the green button is clicked
-            function greenButtonClicked() {
-                document.getElementById("greenButton").style.display = "none";
-                localStorage.setItem("greenButtonClicked", "true");
-            }
-
-        </script>
-        <hr>
-        <h2>Roll some dice!</h2>
-
-    </main>
+    </div>
 </body>
+
+
 
 </html>
