@@ -1,11 +1,8 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Helios&family=Space+Mono&display=swap'); */
-
 body {
-    /* width: 90%; */
-    margin: 0 auto;
-    /* padding: 0px; */
-    background: url("img/background_deep_space_lots_of_stars.png") no-repeat center center fixed;
-    /* display: block; */
+    font-family: 'Noto%20Sans%20Adlam%20Unjoined', sans-serif;
+    background: url("lib/img/background_deep_space_lots_of_stars.png") no-repeat center center fixed;
+    background-size: cover;
 }
 
 h1,
@@ -14,34 +11,36 @@ h3 {
     font-family: 'Space Mono', monospace;
 }
 
+
 .container {
-    width: 90%;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: space-evenly;
-    background: rgb(0, 0, 100, 0.5);
+    background: rgba(0, 0, 50, 0.2);
 }
-
 .left-column {
+    width: 100%;
+    height: auto;
     flex-basis: 0;
     flex-grow: 1;
-    /* width: max-content; */
-    min-width:;
-    margin: 0px 30px;
-    padding: 20px;
-    background-color: rgba(0, 0, 51, 0.5);
+    margin: 0 15px;
+    padding: 10px;
+    background-color: rgba(0, 0, 51, 0.8);
     color: #fff;
 }
 
 .right-column {
+    width: 100%;
+    height: auto;
     flex-basis: 0;
     flex-grow: 1;
-    margin: 0px auto;
-    padding: 20px;
-    background-color: rgba(0, 0, 51, 0.5);
+    margin: 0 15px;
+    padding: 10px;
+    background-color: rgba(0, 0, 51, 0.8);
     color: #fff;
 }
+
 
 .headshot-section {
     text-align: center;
@@ -77,11 +76,14 @@ h3 {
     border-radius: 10px;
 }
 
+.headshot-section,
 .about-section,
+.skills-section,
 .education-section,
 .projects-section,
 .experience-section,
-.hobbies-section {
+.hobbies-section{
+    background:rgb();
     margin-top: 20px;
 }
 
