@@ -1,6 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Helios&family=Space+Mono&display=swap'); */
 body {
-    font-family: 'Noto%20Sans%20Adlam%20Unjoined', sans-serif;
+    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
     background: url("lib/img/background_deep_space_lots_of_stars.png") no-repeat center center fixed;
     background-size: cover;
 }
@@ -12,33 +12,25 @@ h3 {
 }
 
 
-.container {
-    display: flex;
+.container-fluid {
+    padding: 3% 15%;
+/*     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
     background: rgba(0, 0, 50, 0.2);
 }
+
 .left-column {
-    width: 100%;
-    min-width: 230px;
-    height: auto;
-    flex-basis: 0;
-    flex-grow: 1;
-    margin: 0 15px;
-    padding: 10px;
-    background-color: rgba(0, 0, 51, 0.8);
+/*     margin: 0 15px; */
+    padding: 20px;
+    background-color: rgba(50, 50, 90, 0.8);
     color: #fff;
 }
 
 .right-column {
-    width: 100%;
-    min-width: 280px;
-    height: auto;
-    flex-basis: 0;
-    flex-grow: 1;
-    margin: 0 15px;
-    padding: 10px;
+/*     margin: 0 15px; */
+    padding: 15px;
     background-color: rgba(0, 0, 51, 0.8);
     color: #fff;
 }
@@ -57,10 +49,13 @@ h3 {
 
 .skills-section {
     margin-top: 20px;
+    border: 1px solid;
+    
 }
 
 .skills-section .skill {
     margin-bottom: 10px;
+    padding: 0 5%;
 }
 
 .skills-section .skill .progress-bar-container {
@@ -85,7 +80,7 @@ h3 {
 .projects-section,
 .experience-section,
 .hobbies-section{
-    background:rgb();
+/*     background:rgb(); */
     margin-top: 20px;
 }
 
@@ -117,34 +112,4 @@ a:hover {
 .orange-accent {
     background-color: #ffa500;
     color: #ffffff;
-}
-
-/* Mobile styles */
-body {
-    font-size: 16px;
-    background-color: #ccc;
-}
-
-/* Medium device styles */
-@media (min-width: 400px) {
-    body {
-        font-size: 18px;
-        background-color: #ddd;
-    }
-}
-
-/* Large device styles */
-@media (min-width: 700px) {
-    body {
-        font-size: 20px;
-        background-color: #eee;
-    }
-}
-
-/* Extra-large device styles */
-@media (min-width: 1000px) {
-    body {
-        font-size: 24px;
-        background-color: #fff;
-    }
 }
