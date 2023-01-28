@@ -11,10 +11,11 @@ h3 {
     font-family: 'Space Mono', monospace;
 }
 
-
-.container-fluid {
+.container,
+.container-fluid
+ {
     padding: 3% 15%;
-/*     display: flex;
+    /*     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-evenly; */
@@ -22,14 +23,14 @@ h3 {
 }
 
 .left-column {
-/*     margin: 0 15px; */
+    /*     margin: 0 15px; */
     padding: 20px;
     background-color: rgba(50, 50, 90, 0.8);
     color: #fff;
 }
 
 .right-column {
-/*     margin: 0 15px; */
+    /*     margin: 0 15px; */
     padding: 15px;
     background-color: rgba(0, 0, 51, 0.8);
     color: #fff;
@@ -41,8 +42,8 @@ h3 {
 }
 
 .headshot-section img {
-    width: 200px;
-    height: 200px;
+    /* width: 200px; */
+    /* height: 200px; */
     border-radius: 50%;
     border: 5px solid #fff;
 }
@@ -50,7 +51,7 @@ h3 {
 .skills-section {
     margin-top: 20px;
     border: 1px solid;
-    
+
 }
 
 .skills-section .skill {
@@ -79,8 +80,8 @@ h3 {
 .education-section,
 .projects-section,
 .experience-section,
-.hobbies-section{
-/*     background:rgb(); */
+.hobbies-section {
+    /*     background:rgb(); */
     margin-top: 20px;
 }
 
