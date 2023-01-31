@@ -1,8 +1,9 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Helios&family=Space+Mono&display=swap'); */
 body {
     font-family: 'Noto Sans Adlam Unjoined', sans-serif;
-    background: url("lib/img/background_deep_space_lots_of_stars.png") no-repeat center center fixed;
+    background: url("../lib/img/background_deep_space_lots_of_stars.png") no-repeat center center fixed;
     background-size: cover;
+    /* background-image: url(../lib/img/background_deep_space_lots_of_stars.png); */
 }
 
 h1,
@@ -12,28 +13,41 @@ h3 {
 }
 
 .container,
-.container-fluid
- {
-    padding: 3% 15%;
+.container-fluid {
+    padding: 3% 10%;
     /*     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-evenly; */
-    background: rgba(0, 0, 50, 0.2);
+    background: rgba(0, 0, 50, 0.5);
 }
 
 .left-column {
-    /*     margin: 0 15px; */
-    padding: 20px;
-    background-color: rgba(50, 50, 90, 0.8);
+    /* box-sizing: content-box; */
+    /* margin: 0 15px; */
+    /* padding: 20px; */
     color: #fff;
 }
 
+.left-column .shadow {
+    margin: 0 2% 30px 2%;
+    padding: 0 5%;
+    background-color: rgba(50, 50, 90, 0.6);
+    height: 100%;
+}
+
 .right-column {
-    /*     margin: 0 15px; */
-    padding: 15px;
-    background-color: rgba(0, 0, 51, 0.8);
+    /* box-sizing: content-box; */
+    /* margin: 0 15px; */
+    /* padding: 15px; */
     color: #fff;
+}
+
+.right-column .shadow {
+    margin: 0 2% 30px 2%;
+    padding: 0 5%;
+    height: 100%;
+    background-color: rgba(80, 80, 120, 0.6);
 }
 
 
@@ -61,7 +75,7 @@ h3 {
 
 .skills-section .skill .progress-bar-container {
     width: 100%;
-    height: 20px;
+    height: 0.5rem;
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
