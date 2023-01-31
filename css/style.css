@@ -1,0 +1,130 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Helios&family=Space+Mono&display=swap'); */
+body {
+    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+    background: url("../lib/img/background_deep_space_lots_of_stars.png") no-repeat center center fixed;
+    background-size: cover;
+    /* background-image: url(../lib/img/background_deep_space_lots_of_stars.png); */
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Space Mono', monospace;
+}
+
+.container,
+.container-fluid {
+    padding: 3% 10%;
+    /*     display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-evenly; */
+    background: rgba(0, 0, 50, 0.5);
+}
+
+.left-column {
+    /* box-sizing: content-box; */
+    /* margin: 0 15px; */
+    /* padding: 20px; */
+    color: #fff;
+}
+
+.left-column .shadow {
+    margin: 0 2% 30px 2%;
+    padding: 0 5%;
+    background-color: rgba(50, 50, 90, 0.6);
+    height: 100%;
+}
+
+.right-column {
+    /* box-sizing: content-box; */
+    /* margin: 0 15px; */
+    /* padding: 15px; */
+    color: #fff;
+}
+
+.right-column .shadow {
+    margin: 0 2% 30px 2%;
+    padding: 0 5%;
+    height: 100%;
+    background-color: rgba(80, 80, 120, 0.6);
+}
+
+
+.headshot-section {
+    text-align: center;
+}
+
+.headshot-section img {
+    /* width: 200px; */
+    /* height: 200px; */
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.skills-section {
+    margin-top: 20px;
+    border: 1px solid;
+
+}
+
+.skills-section .skill {
+    margin-bottom: 10px;
+    padding: 0 5%;
+}
+
+.skills-section .skill .progress-bar-container {
+    width: 100%;
+    height: 0.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.skills-section .skill .progress-bar {
+    height: 100%;
+    background-color: #ffa500;
+    border-radius: 10px;
+}
+
+.headshot-section,
+.about-section,
+.skills-section,
+.education-section,
+.projects-section,
+.experience-section,
+.hobbies-section {
+    /*     background:rgb(); */
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #00e5ff;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff8c00;
+    text-decoration: underline;
+}
+
+/* Orange Accents */
+.orange-accent {
+    background-color: #ffa500;
+    color: #ffffff;
+}
