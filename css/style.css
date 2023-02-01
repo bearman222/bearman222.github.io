@@ -14,7 +14,7 @@ h3 {
 
 .container,
 .container-fluid {
-    padding: 3% 10%;
+    padding: 3% 5%;
     /*     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
@@ -26,13 +26,15 @@ h3 {
     /* box-sizing: content-box; */
     /* margin: 0 15px; */
     /* padding: 20px; */
+    font-size: 90%;
     color: #fff;
+    height: 100%;
 }
 
 .left-column .shadow {
-    margin: 0 2% 30px 2%;
-    padding: 0 5%;
-    background-color: rgba(50, 50, 90, 0.6);
+    /* margin: 0 2% 30px 2%;
+    padding: 0 5%; */
+    background-color: rgba(50, 50, 110, 0.8);
     height: 100%;
 }
 
@@ -40,16 +42,25 @@ h3 {
     /* box-sizing: content-box; */
     /* margin: 0 15px; */
     /* padding: 15px; */
+    font-size: 90%;
     color: #fff;
+    height: 100%;
 }
 
 .right-column .shadow {
-    margin: 0 2% 30px 2%;
-    padding: 0 5%;
+    /* margin: 0 2% 30px 2%;
+    padding: 0 5%; */
+    background-color: rgba(80, 80, 120, 0.8);
     height: 100%;
-    background-color: rgba(80, 80, 120, 0.6);
 }
 
+.right-column .sub-col-1 {
+    height: 100%;
+}
+
+.right-column .sub-col-2 {
+    height: 100%;
+}
 
 .headshot-section {
     text-align: center;
@@ -105,7 +116,9 @@ h2 {
 }
 
 h3 {
-    margin-bottom: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 1em auto;
 }
 
 p {
@@ -127,4 +140,8 @@ a:hover {
 .orange-accent {
     background-color: #ffa500;
     color: #ffffff;
+}
+
+.hidden {
+    display: none;
 }

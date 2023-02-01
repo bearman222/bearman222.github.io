@@ -20,91 +20,160 @@
 </head>
 
 <body>
-	<div class="container-fluid">
+	<div class="container">
+		<!-- Todo: page header row -->
 		<div class="row">
-			<div class="left-column col-lg-5 col-sm-4">
-				<div class="shadow">
-					<div class="headshot-section mx-auto d-none d-sm-block col-sm-10 col-md-8 p-3">
-						<img class="img-fluid" src="lib/img/Headshot.png" alt="barron profile picture" />
+			<nav class="navbar navbar-expand navbar-light bg-light">
+				<ul class="nav navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" href="#" aria-current="page">Nav 1 <span
+								class="visually-hidden">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Nav 2</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!-- content row -->
+		<div class="row">
+			<!-- column is seen on left for larger screens. and top for small and mobile  -->
+			<div class="left-column px-3 col-12 order-1 col-md-4 order-md-1 ">
+				<div class="row shadow">
+					<!-- start content -->
+					<!-- section takes up full width of column, image is put into a container for sizing -->
+					<div class="headshot-section col-12 order-1">
+						<div class="img-container col-8 mx-auto">
+							<img class="img-fluid" src="lib/img/Headshot.png" alt="barron profile picture" />
+						</div>
 					</div>
-					<div class="contact-section d-grid col">
-						<a class="btn btn-outline-success btn-block" href="contact-me.html"><i
-								class="fa-solid fa-envelope"></i> Contact</a>
-						<a class="btn btn-outline-info btn-block" href="https://github.com/bearman222"><i
-								class="fa-brands fa-github"></i> GitHub</a>
-						<a class="btn btn-outline-primary btn-block" href="#"><i class="fa-brands fa-linkedin"></i>
+					<div class="about-section col-12 order-2">
+						<h3 class="hidden">About Me</h3>
+						<h3 class="header-text">Hi, I'm Barron!</h3>
+						<p class="text-bg-info text-center">A Software Developer</p>
+						<p class="text-info">I help small businesses succeed by understanding their challenges and
+							providing creative solutions through technology.</p>
+						<p class="text-info"> My focus is on custom software, website
+							design, and reaching new customers.</p>
+						<p class="text-info">I would love to develop your next web application.
+							Click 'Contact' below.
+						</p>
+						<p class="float-end px-5">Cheers,<br>- Barron Eskind</p>
+					</div>
+					<div class="contact-section col-12 py-2 px-5 order-3 mx-auto d-grid order-3">
+						<a class="btn btn-outline-success text-bg-secondary btn-block"
+							href="mailto:barron.eskind+webinfo@gmail.com"><i class="fa-solid fa-envelope"></i>
+							Contact</a>
+						<a class="btn btn-outline-info text-bg-secondary btn-block"
+							href="https://github.com/bearman222"><i class="fa-brands fa-github"></i> GitHub</a>
+						<a class="btn btn-outline-primary text-bg-secondary btn-block" href="#"><i
+								class="fa-brands fa-linkedin"></i>
 							LinkedIn</a>
-					</div>
-					<div class="skills-section">
-						<h2>Skills</h2>
-						<div class="skill">
-							<p>Web Development</p>
-							<div class="progress-bar-container">
-								<div class="progress-bar" style="width: 80%;"></div>
-							</div>
-						</div>
-						<div class="skill">
-							<p>JavaScript</p>
-							<div class="progress-bar-container">
-								<div class="progress-bar" style="width: 90%;"></div>
-							</div>
-						</div>
-						<div class="skill">
-							<p>HTML/CSS</p>
-							<div class="progress-bar-container">
-								<div class="progress-bar" style="width: 90%;"></div>
-							</div>
-						</div>
-						<div class="skill">
-							<p>React</p>
-							<div class="progress-bar-container">
-								<div class="progress-bar" style="width: 70%;"></div>
-							</div>
-						</div>
-						<div class="skill">
-							<p>Node.js</p>
-							<div class="progress-bar-container">
-								<div class="progress-bar" style="width: 60%;"></div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
-			<div class="right-column col-lg-7 col-sm-8">
-				<div class="shadow">
-					<div class="about-section">
-						<h3>About Me</h3>
-						<span>Barron Eskind</span>
-						<p class="orange-accent">Software Developer</p>
-						<p>I am a python programmer and full-stack web developer.</p>
-						<p>I also love to develop solutions for complex problems.</p>
+			<div class="right-column px-3 col-12 order-2 col-md-8 order-md-2 ">
+				<div class="shadow row">
+					<div class="sub-col-1 col-12 order-1 col-lg-7">
+						<div class="experience-section col-12 px-4">
+							<h3>Experience</h3>
+							<div class="">
+								As a developer, I understand the unique challenges facing small businesses in today's
+								fast-paced, technology-driven world. With the rise of new technologies and the growing
+								need
+								for digital solutions, small businesses often struggle to keep up with the demands of a
+								constantly evolving market. However, with my deep understanding of the latest
+								developments
+								and my ability to find creative solutions to complex problems, I am well-equipped to
+								help
+								small businesses overcome these challenges and thrive in the digital age. Whether it's
+								developing custom software to streamline operations, designing websites that effectively
+								communicate brand messaging, or finding innovative ways to reach new customers, I am
+								dedicated to helping small businesses succeed. With my passion for technology and my
+								commitment to excellence, I am confident that I can help small businesses navigate the
+								ever-changing landscape of the digital world and achieve their goals.
+							</div>
+						</div>
+						<div class="skills-section col-12 px-4">
+							<h2>Skills</h2>
+							<div class="skill">
+								<p>Web Development</p>
+								<div class="progress-bar-container">
+									<div class="progress-bar" style="width: 80%;"></div>
+								</div>
+							</div>
+							<div class="skill">
+								<p>JavaScript</p>
+								<div class="progress-bar-container">
+									<div class="progress-bar" style="width: 90%;"></div>
+								</div>
+							</div>
+							<div class="skill">
+								<p>HTML/CSS</p>
+								<div class="progress-bar-container">
+									<div class="progress-bar" style="width: 90%;"></div>
+								</div>
+							</div>
+							<div class="skill">
+								<p>Bootstrap 5</p>
+								<div class="progress-bar-container">
+									<div class="progress-bar" style="width: 70%;"></div>
+								</div>
+							</div>
+							<div class="skill">
+								<p>Node.js</p>
+								<div class="progress-bar-container">
+									<div class="progress-bar" style="width: 60%;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-					</div>
-					<div class="education-section">
-						<h3>Education</h3>
-						<ul>
-							<li>
-								Lousiana State University A&M. Baton Rouge, LA <br />
-								2008 BA in English Literature
-							</li>
-							<li>
-								Louisiana School for Math, Science, \& Arts. Natchitoches, LA <br />
-								2004 HS Diploma, dual focus: Computer Science and Literature Studies
-							</li>
-						</ul>
-					</div>
-					<div class="hobbies-section">
-						<h3>My Hobbies</h3>
-						<ul>
+					<div class="sub-col-2 col-12 order-2 col-lg-5">
+
+						<div class="education-section col-12 order-1">
+							<h3>Education</h3>
+							<div>Louisiana State University A&M. Baton Rouge, LA <br />
+								B.A. in English
+							</div>
+							<div>
+								Louisiana School for Math, Science, & Arts. Natchitoches, LA <br />
+								HS Diploma, dual focus: Computer Science & English
+							</div>
+
+							<!-- TODO: add credentials to this section -->
+							<h3>Certifications</h3>
+							<div><a href="./lib/img/certificate_XpeQ.mC7T.kV9e_12813585_1.png">Python Institute
+									Certified
+									Programmer</a></div>
+							<div><a href="#">University of Louisiana Lafayette, Full-Stack Certified</a></div>
+						</div>
+
+
+						<!-- TODO: add projects section -->
+						<div class="projects-section col-12 order-2">
+							<h3>Projects</h3>
+							<li>Marketplace Web Application</li>
+							<li>K-12 Practice Test Platform</li>
+							<li>Snake (Python, lol)</li>
+						</div>
+
+						<div class="hobbies-section col-12 order-3">
+							<h3>Hobbies</h3>
 							<li>Painting miniature figurines for tabletop RPGs</li>
 							<li>Enjoying nature through scouting and camping</li>
 							<li>Drinking coffee and sunrises</li>
 							<li>Watching RiffTrax or Mystery Science 3k movies</li>
 							<li><a href="my-story.html">See why I started learning code at age 6.</a></li>
-						</ul>
-					</div>
+						</div>
+					</div>   <!-- end sub-col-2-->
 				</div>
 			</div>
+		</div>
+
+		<!-- TODO: footer row -->
+		<div class="row">
+			<div class="modal-footer col-12"></div>
 		</div>
 	</div>
 </body>
